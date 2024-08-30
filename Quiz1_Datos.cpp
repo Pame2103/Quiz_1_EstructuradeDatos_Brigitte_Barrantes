@@ -192,7 +192,7 @@ public:
 		}
 	}
 
-	// Función para eliminar el piso 3 y mover los empleados al piso anterior
+	// Función para eliminar el piso 3 y mover  al piso anterior
 	void eliminarPiso3() {
 		NodoPiso* piso3 = buscarPiso("Piso 3");
 		if (piso3 && piso3->anterior) {
@@ -206,7 +206,7 @@ public:
 				}
 			}
 
-			// Mover los empleados del piso 3 al piso anterior
+			// Mover  del piso 3 al piso anterior
 			NodoEmpleado* actualEmpleado = piso3->listaEmpleados;
 			while (actualEmpleado) {
 				NodoEmpleado* siguienteEmpleado = actualEmpleado->siguiente;
@@ -357,9 +357,8 @@ private:
 	}
 };
 
-// Función principal
 int main() {
 	Edificio edificio;
-	edificio.menu();  // Llamada al menú para interactuar con el sistema.
+	edificio.menu();  
 	return 0;
 }
